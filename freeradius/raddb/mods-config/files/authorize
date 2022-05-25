@@ -1,0 +1,2 @@
+DEFAULT Auth-Type := Accept
+Termination-Action = RADIUS-Request

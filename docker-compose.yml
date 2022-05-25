@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+
+  freeradius:
+          build:
+              context: freeradius/
+              args:
+                  VERSAO_FREERADIUS: $VERSAO_FREERADIUS
+          #image: elastiflow/flow-collector:5.1.10
+          container_name: freeradius01
+          hostname: freeradius01
+          restart: 'unless-stopped'
+          network_mode: bridge
+          ports:
+              - "1812:1812/udp"
+              - "1813:1813/udp"
