@@ -20,3 +20,21 @@ Verificar se o docker e docker-compose foi instalado:
 docker version
 docker-compose --version
 ```
+Para instalar a suite:
+
+1. Clonar o repositório via GIT. 
+
+Por estar em desenvolvimento, necessário baixar a branch develop:
+
+```
+cd /root
+git clone https://github.com/alexnanow/docker-freeradius
+```
+
+2. Entrar e executar o docker-compose para baixar e rodar os containers das aplicações
+
+```
+cd /root/docker-freeradius
+docker-compose build
+docker-compose up -d
+```
