@@ -20,7 +20,7 @@ Verificar se o docker e docker-compose foi instalado:
 docker version
 docker-compose --version
 ```
-Para instalar a suite:
+## Para instalar a suite:
 
 1. Clonar o repositório via GIT. 
 
