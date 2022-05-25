@@ -24,8 +24,6 @@ Para instalar a suite:
 
 1. Clonar o repositório via GIT. 
 
-Por estar em desenvolvimento, necessário baixar a branch develop:
-
 ```
 cd /root
 git clone https://github.com/alexnanow/docker-freeradius
@@ -38,3 +36,23 @@ cd /root/docker-freeradius
 docker-compose build
 docker-compose up -d
 ```
+
+3. Confirmar se o Freeradius está rodando:
+
+```
+docker ps
+```
+
+Deve aparecer algo semelhante assim:
+
+```
+CONTAINER ID   IMAGE                          COMMAND                  CREATED         STATUS         PORTS                                                           NAMES
+17d51d56c640   freeradius-docker_freeradius   "/docker-entrypoint.…"   2 minutes ago   Up 2 minutes   0.0.0.0:1812-1813->1812-1813/udp, :::1812-1813->1812-1813/udp   freeradius01
+```
+Caso apareça conforme acima, o serviço já está rodando.
+
+##Informações extras
+
+1. Para autenticar no seridor radius, basta utilizar a secret **radiusmagico**
+
+2. Qualquer host poderá se autenticar no servidor. Então **cuidado com a segurança do servidor RADIUS, utilizando um firewall para limitar a consulta do mesmo nas portas padrão (1812 e 1813 UDP)**
