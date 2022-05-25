@@ -3,7 +3,7 @@ Repositório da suite freeradius em Docker para conexão de usuários de forma e
 
 Utiliza o Docker, Docker-compose e Freeradius (versão alpine-linux, sem plugins extras).
 
-Instalação do Docker e git:
+### Instalação do Docker e git:
 
 ```
 apt update && apt install -y ca-certificates curl gnupg lsb-release git
@@ -20,7 +20,7 @@ Verificar se o docker e docker-compose foi instalado:
 docker version
 docker-compose --version
 ```
-## Para instalar a suite:
+### Para instalar a suite:
 
 1. Clonar o repositório via GIT. 
 
@@ -51,7 +51,7 @@ CONTAINER ID   IMAGE                          COMMAND                  CREATED  
 ```
 Caso apareça conforme acima, o serviço já está rodando.
 
-## Informações extras
+### Informações extras
 
 1. Para autenticar no servidor radius, basta utilizar a secret **radiusmagico**
 
