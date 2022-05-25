@@ -51,7 +51,7 @@ CONTAINER ID   IMAGE                          COMMAND                  CREATED  
 ```
 Caso apareça conforme acima, o serviço já está rodando.
 
-##Informações extras
+## Informações extras
 
 1. Para autenticar no seridor radius, basta utilizar a secret **radiusmagico**
 
