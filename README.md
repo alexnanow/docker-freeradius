@@ -53,6 +53,6 @@ Caso apareça conforme acima, o serviço já está rodando.
 
 ## Informações extras
 
-1. Para autenticar no seridor radius, basta utilizar a secret **radiusmagico**
+1. Para autenticar no servidor radius, basta utilizar a secret **radiusmagico**
 
 2. Qualquer host poderá se autenticar no servidor. Então **cuidado com a segurança do servidor RADIUS, utilizando um firewall para limitar a consulta do mesmo nas portas padrão (1812 e 1813 UDP)**
